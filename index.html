@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillscafe demo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae5d9fbc70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#">TransUnion</a>
+        <a href="#">Admin T1</a>
+        <a href="#">30</a>
+        <a href="#">scoreboard</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Admin</a>
+        <a href="#">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <main>
+        <h2 id="mainHeading">Getting Started</h2>
+
+        <section id="demo">
+            <h3>The RISE Journey</h3>
+            <div id="flex-container">
+                <div id="demoLeft">
+                    <i class="fa-solid fa-desktop" style="font-size: 100px;"></i>
+                    <p>Rate your experience</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div id="demoRight">
+                    <p>Be sure to watch this before moving ahead. It will help you make the most of the learning journey.</p>
+                    <p><i class="fa-solid fa-clock-rotate-left"></i> 2 minutes</p>
+                    <div id="note">
+                        <p>take a quick virtual tour of your RISE learning journey, before you begin.</p>
+                    </div> 
+
+                    <video controls>
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                        <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+                        <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />                    
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Discussion Board</h3>
+
+            <div class="comment">
+                <span>
+                    <p class="name">Hemanth Ravula</p>
+                    <p>Hey..!</p>
+                </span>
+                <p>18 Oct, 09:45</p>
+            </div>
+
+            <div class="comment new">
+                <span>
+                    <p class="name">Parag Chavan</p>
+                    <p>Hello </p>
+                </span>
+                <p>13 Jan, 03:55</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
+</html>
